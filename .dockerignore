@@ -1,0 +1,4 @@
+/nginx/*
+.git
+Makefile
+Readme.md
