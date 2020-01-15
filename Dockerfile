@@ -94,10 +94,10 @@ CMD ["php-fpm"]
 
 FROM nginx:stable
 
-EXPOSE 80
+EXPOSE 8080
 EXPOSE 443
 
-COPY ./conf.d/site.conf /etc/nginx/conf.d/
+COPY ./conf.d/site.conf /etc/nginx/conf.d/default.conf
 COPY ./www/ /var/www/html/
 
 # RUN chown -R www-data:www-data /var/www/html
