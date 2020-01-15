@@ -100,4 +100,4 @@ EXPOSE 443
 COPY ./conf.d/site.conf /etc/nginx/conf.d/
 COPY ./www/ /var/www/html/
 
-RUN chown -R www-data:www-data /var/www/html
+# RUN chown -R www-data:www-data /var/www/html
